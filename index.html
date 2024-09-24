@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Home - My Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="welcome">
+            <h2>Hello, I'm Muhammad Hamza</h2>
+            <p>I am a Web Developer with a passion for my Skills.</p>
+            <img src="assets/IMG_7760.JPG" alt="Profile Picture" width="150">
+            <div>
+                <button onclick="scrollToSection('about')">About Me</button>
+                <button onclick="scrollToSection('projects')">My Projects</button>
+                <button onclick="scrollToSection('skills')">My Skills</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>copyrigh: 2024 Muhammad Hamza.</p>
+        <p>Follow me on:
+            <a href="https://twitter.com/yourprofile">Twitter</a>,
+            <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
+        </p>
+    </footer>
+
+    <script>
+        function scrollToSection(section) {
+            document.getElementById(section).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
